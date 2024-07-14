@@ -332,7 +332,7 @@
 
 // Added the following code to handle language toggle
 document.addEventListener('DOMContentLoaded', function () {
-  let currentLanguage = 'es';
+  let currentLanguage = 'en';
 
   function updateContent() {
     const aboutContentEn = document.getElementById('about-content-en');
