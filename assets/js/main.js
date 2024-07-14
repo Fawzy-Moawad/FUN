@@ -337,17 +337,23 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateContent() {
     const aboutContentEn = document.getElementById('about-content-en');
     const aboutContentAr = document.getElementById('about-content-ar');
+    const servicesContentEn = document.getElementById('services-content-en');
+    const servicesContentAr = document.getElementById('services-content-ar');
     
     
 
     if (currentLanguage === 'en') {
       aboutContentEn.style.display = 'block';
       aboutContentAr.style.display = 'none';
+      servicesContentEn.style.display = 'block';
+      servicesContentAr.style.display = 'none';
       
       
     } else {
       aboutContentEn.style.display = 'none';
       aboutContentAr.style.display = 'block';
+      servicesContentEn.style.display = 'none';
+      servicesContentAr.style.display = 'block';
       
     }
   }
