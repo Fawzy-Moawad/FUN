@@ -326,3 +326,65 @@
   new PureCounter();
 
 })()
+
+
+/*language*/
+
+// Added the following code to handle language toggle
+document.addEventListener('DOMContentLoaded', function () {
+  let currentLanguage = 'es';
+
+  function updateContent() {
+    const aboutContentEn = document.getElementById('about-content-en');
+    const aboutContentAr = document.getElementById('about-content-ar');
+    
+    
+
+    if (currentLanguage === 'en') {
+      aboutContentEn.style.display = 'block';
+      aboutContentAr.style.display = 'none';
+      
+      
+    } else {
+      aboutContentEn.style.display = 'none';
+      aboutContentAr.style.display = 'block';
+      
+    }
+  }
+
+  function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+    updateContent();
+  }
+
+  const languageToggle = document.getElementById('languageToggle');
+  if (languageToggle) {
+    languageToggle.addEventListener('change', toggleLanguage);
+  }
+
+  updateContent();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const envelopeIcon = document.querySelector('.envelope');
+  envelopeIcon.addEventListener('click', function(event) {
+      event.preventDefault();
+      const emailAddress = this.getAttribute('href').replace('mailto:', '');
+      window.location.href = `mailto:${emailAddress}`;
+  });
+});
