@@ -37,22 +37,30 @@
 
       <div class="row justify-content-center align-items-center">
         <div class="col-xl-11 d-flex align-items-center justify-content-between">
-          <!-- <h1 class="logo"><a href="index.html">BizPage</a></h1> -->
-          <a href="index.html" class="logo"><img src="assets/img/eccsbc_logo.png" alt="" class="img-fluid"></a>
+          <h1 class="logo"><a href="index.html">FUN</a></h1>
+          <!-- <a href="index.html" class="logo"><img src="assets/img/eccsbc_logo.png" alt="" class="img-fluid"></a> -->
 
           <nav id="navbar" class="navbar">
             <ul>
               <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
               <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
               <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-              <li><a class="nav-link scrollto" href="index.html#clubs">Clubs</a></li>
               <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
-              <li><a class="nav-link scrollto" href="school.html">School</a></li>
               <li><a class="nav-link scrollto" href="upcomingEvents.html">Upcoming Events</a></li>
-              <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
-              <li><a class="nav-link scrollto" href="sponsors.html">Sponsors</a></li>
               <li><a class="nav-link scrollto active" href="contact.html">Contact</a></li>
             </ul>
+
+            <!-- Language switcher buttons -->
+            <div class="toggle-button-cover">
+              <div class="button-cover">
+                  <div class="button b2" id="button-16">
+                      <input type="checkbox" class="checkbox" id="languageToggle" />
+                      <div class="knobs"></div>
+                      <div class="layer"></div>
+                  </div>
+              </div>
+            </div>
+
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
         </div>
@@ -66,11 +74,75 @@
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="section-bg">
       <div class="container" data-aos="fade-up">
+  
+      <!-- English Content -->
+      <div id="contact-content-en">
+        <h3 class="section-header">Contact Us</h3>
+        <p>
+          We value your feedback and are here to assist you with any inquiries or support you may need. Feel free to reach out to us via phone, email, or by filling out the contact form on our website. We look forward to connecting with you.
+        </p>
 
-        <div class="section-header p-5">
-          <h3>Contact Us</h3>
-          <p>Get in Touch with ECCSBC! We value your feedback, questions, and suggestions. Whether you need assistance, want to share your ideas, or simply wish to connect, we're here to help. Reach out to us through our contact form, email, or social media channels. We look forward to hearing from you!</p>
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address>Vancouver, BC, Canada</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+10000000000">+1 000 000 0000</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
         </div>
+
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+        
+
+      <!-- Arabic Content -->
+      <div  dir='rtl' lang='ar' id="contact-content-ar">
+        <h3 class="section-header">تواصل معنا</h3>
+        <p>
+          نحن نقدر ملاحظاتكم ونحن هنا لمساعدتكم في أي استفسارات أو دعم قد تحتاجونه. لا تترددوا في التواصل معنا عبر الهاتف أو البريد الإلكتروني، أو من خلال ملء نموذج الاتصال على موقعنا الإلكتروني. نتطلع للتواصل معكم
+        </p>
 
         <div class="row contact-info">
 
@@ -126,36 +198,10 @@
         </div>
 
       </div>
+
     </section><!-- End Contact Section -->
 
-    <!-- ======= Our Clients Section ======= -->
-    <section id="clients">
-        <div class="container" data-aos="zoom-in">
-  
-          <header class="section-header">
-            <h3><a href="sponsors.html">Sponsors</a></h3>
-          </header>
-  
-          <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><img src="assets/img/clients/Lotus-Dental-Clinic.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/sabry.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/PowerSmile.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/SMESTRA-Lenovo.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/Amr-Immigration.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/Lotus-Dental-Clinic.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/sabry.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/PowerSmile.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/SMESTRA-Lenovo.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/Amr-Immigration.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            </div>
-          </div>
-  
-        </div>
-      </section><!-- End Our Clients Section -->
-
+    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -165,9 +211,10 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>ECCS BC</h3>
+            <h4>FUN</h4>
             <p>
-              The Egyptian Canadian Cultural Society of BC, ECCS BC, is a dynamic non-profit organization gathering and serving all BC resident Egyptians who have genuine interest in the Egyptian Mosaic Culture, Traditions, History and Future.</p>
+              FUN is a non-profit organization dedicated to serving the Arab and Muslim community by providing family-focused services and fostering social cohesion. We aim to empower families through educational, social, and support initiatives.
+            </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -175,17 +222,13 @@
               <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#clubs">Clubs</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="school.html">School</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#events">Events</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#">Gallery</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="upcomingEvents.html">Upcoming Events</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="sponsors.html">Sponsors</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -214,7 +257,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong class="copyRight">ECCS BC</strong>. All Rights Reserved
+        &copy; Copyright <strong class="copyRight">FUN</strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="#"><strong class="copyRight">NorthWest Tech</strong></a>

@@ -339,6 +339,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutContentAr = document.getElementById('about-content-ar');
     const servicesContentEn = document.getElementById('services-content-en');
     const servicesContentAr = document.getElementById('services-content-ar');
+    const contactContentEn = document.getElementById('contact-content-en');
+    const contactContentAr = document.getElementById('contact-content-ar');
     
     
 
@@ -347,6 +349,8 @@ document.addEventListener('DOMContentLoaded', function () {
       aboutContentAr.style.display = 'none';
       servicesContentEn.style.display = 'block';
       servicesContentAr.style.display = 'none';
+      contactContentEn.style.display = 'block';
+      contactContentAr.style.display = 'none';
       
       
     } else {
@@ -354,6 +358,8 @@ document.addEventListener('DOMContentLoaded', function () {
       aboutContentAr.style.display = 'block';
       servicesContentEn.style.display = 'none';
       servicesContentAr.style.display = 'block';
+      contactContentEn.style.display = 'none';
+      contactContentAr.style.display = 'block';
       
     }
   }
