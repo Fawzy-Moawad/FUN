@@ -339,8 +339,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutContentAr = document.getElementById('about-content-ar');
     const servicesContentEn = document.getElementById('services-content-en');
     const servicesContentAr = document.getElementById('services-content-ar');
-    const contactContentEn = document.getElementById('contact-content-en');
-    const contactContentAr = document.getElementById('contact-content-ar');
+    const contactUsContentEn = document.getElementById('contactUs-content-en');
+    const contactUsContentAr = document.getElementById('contactUs-content-ar');
+    const footerContentEn = document.getElementById('footer-content-en');
+    const footerContentAr = document.getElementById('footer-content-ar');
     
     
 
@@ -349,8 +351,10 @@ document.addEventListener('DOMContentLoaded', function () {
       aboutContentAr.style.display = 'none';
       servicesContentEn.style.display = 'block';
       servicesContentAr.style.display = 'none';
-      contactContentEn.style.display = 'block';
-      contactContentAr.style.display = 'none';
+      contactUsContentEn.style.display = 'block';
+      contactUsContentAr.style.display = 'none';
+      footerContentEn.style.display = 'block';
+      footerContentAr.style.display = 'none';
       
       
     } else {
@@ -358,8 +362,10 @@ document.addEventListener('DOMContentLoaded', function () {
       aboutContentAr.style.display = 'block';
       servicesContentEn.style.display = 'none';
       servicesContentAr.style.display = 'block';
-      contactContentEn.style.display = 'none';
-      contactContentAr.style.display = 'block';
+      contactUsContentEn.style.display = 'none';
+      contactUsContentAr.style.display = 'block';
+      footerUsContentEn.style.display = 'none';
+      footerContentAr.style.display = 'block';
       
     }
   }
