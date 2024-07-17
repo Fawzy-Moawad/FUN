@@ -63,7 +63,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #fca311;
+  background: #aebfdb;
   color: #fff;
 }
 
@@ -134,7 +134,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fca311;
+  color: #aebfdb;
 }
 
 #header .logo img {
@@ -195,7 +195,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fca311;
+  color: #aebfdb;
 }
 
 .navbar .dropdown ul {
@@ -230,7 +230,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #fca311;
+  color: #aebfdb;
 }
 
 .navbar .dropdown:hover>ul {
@@ -266,7 +266,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fca311;
+  color: #aebfdb;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -315,7 +315,12 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar-mobile a,
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+}
+
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
@@ -325,7 +330,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #fca311;
+  color: #aebfdb;
 }
 
 .navbar-mobile .getstarted,
@@ -360,7 +365,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #fca311;
+  color: #aebfdb;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -470,7 +475,7 @@ Toggle Section
 #button-16 .checkbox:checked + .knobs:before {
   content: "ARB";
   left: 42px;
-  background-color: #fca311;
+  background-color: #f4c785;
 }
 
 #button-16 .checkbox:checked ~ .layer {
@@ -710,7 +715,7 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/about-bg.png") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -723,7 +728,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.88);
   z-index: 9;
 }
 
@@ -770,10 +775,16 @@ section {
 
 
 #about .about-col h2 a {
-  color: #fca311;
+  color: #aebfdb;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
+}
+
+h4.title {
+  color: #14213d; /* Your desired color */
+  font-size: 24px; /* Add other styles as needed */
+  font-weight: 500;
 }
 
 
@@ -802,7 +813,7 @@ section {
 }
 
 #services .icon i {
-  color: #fca311;
+  color: #14213d;
   font-size: 36px;
   line-height: 0;
   transition: 0.5s;
@@ -820,7 +831,7 @@ section {
 }
 
 #services .box:hover .title a {
-  color: #fca311;
+  color: #aebfdb;
 }
 
 #services .description {

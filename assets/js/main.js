@@ -382,27 +382,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateContent();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const envelopeIcon = document.querySelector('.envelope');
-  envelopeIcon.addEventListener('click', function(event) {
-      event.preventDefault();
-      const emailAddress = this.getAttribute('href').replace('mailto:', '');
-      window.location.href = `mailto:${emailAddress}`;
-  });
-});
