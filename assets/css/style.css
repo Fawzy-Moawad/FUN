@@ -738,6 +738,7 @@ section {
   }
 }
 
+/* -------------------------------
 /* About Us Section
 --------------------------------*/
 #about {
@@ -745,6 +746,7 @@ section {
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+  overflow: hidden; /* Ensure the content doesn't overflow */
 }
 
 #about::before {
@@ -761,6 +763,9 @@ section {
 #about .container {
   position: relative;
   z-index: 10;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Limit container height to viewport height */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 #about .about-col {
@@ -772,12 +777,10 @@ section {
 
 #about .about-col .img {
   position: relative;
-  
 }
 
 #about .about-col ul li strong {
   color: #14213d;
-  
 }
 
 #about .about-col .img img {
@@ -799,7 +802,6 @@ section {
   font-size: 20px;
 }
 
-
 #about .about-col h2 a {
   color: #aebfdb;
   text-align: center;
@@ -813,7 +815,6 @@ h4.title {
   font-weight: 500;
 }
 
-
 #about .about-col p {
   font-size: 14px;
   line-height: 24px;
@@ -821,6 +822,14 @@ h4.title {
   padding: 20px;
   text-align: center;
 }
+
+/* Ensure the same fixed background effect on mobile */
+@media (max-width: 768px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
 
 /* Services Section
 --------------------------------*/
@@ -831,6 +840,10 @@ h4.title {
 }
 
 #services h3{
+  color: #14213d;
+}
+
+#services p{
   color: #fff;
 }
 
@@ -843,7 +856,7 @@ h4.title {
 }
 
 #services .icon i {
-  color: #fff;
+  color: #ebdca5;
   font-size: 36px;
   line-height: 0;
   transition: 0.5s;
@@ -870,6 +883,7 @@ h4.title {
 }
 
 #services .description {
+  color: #fff;
   font-size: 14px;
   margin-left: 60px;
   line-height: 24px;
