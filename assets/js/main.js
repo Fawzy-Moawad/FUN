@@ -382,3 +382,62 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateContent();
 });
+
+
+// our activities in about section
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const rows = document.querySelectorAll(".row.p-3");
+
+  rows.forEach(row => {
+    const cards = row.querySelectorAll(".col-lg-6, .col-lg-12");
+
+    // Reset heights to auto to get the natural height of each card
+    cards.forEach(card => {
+      card.style.height = "auto";
+    });
+
+    // Find the tallest card in this row
+    let maxHeight = 0;
+    cards.forEach(card => {
+      const height = card.offsetHeight;
+      if (height > maxHeight) {
+        maxHeight = height;
+      }
+    });
+
+    // Set all cards in this row to the height of the tallest card
+    cards.forEach(card => {
+      card.style.height = `${maxHeight}px`;
+    });
+  });
+});
+
+
+
+
+//our focus cards
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".ag-courses_item");
+
+  // Reset heights to auto to get the natural height of each card
+  cards.forEach(card => {
+    card.style.height = "auto";
+  });
+
+  // Find the tallest card
+  let maxHeight = 0;
+  cards.forEach(card => {
+    const height = card.offsetHeight;
+    if (height > maxHeight) {
+      maxHeight = height;
+    }
+  });
+
+  // Set all cards to the height of the tallest card
+  cards.forEach(card => {
+    card.style.height = `${maxHeight}px`;
+  });
+});
