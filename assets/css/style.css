@@ -910,23 +910,6 @@ our activities
   max-width: 470px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 vision and focus
 */
@@ -1393,6 +1376,10 @@ Services Section
   padding: 60px 0;
 }
 
+#contact .section-header h3 {
+  color: #fff;
+}
+
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
@@ -1402,7 +1389,7 @@ Services Section
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #CE1127;
+  color: #14213d;
 }
 
 #contact .contact-info address,
@@ -1416,7 +1403,7 @@ Services Section
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: #fff;
 }
 
 #contact .contact-info a {
@@ -1424,7 +1411,7 @@ Services Section
 }
 
 #contact .contact-info a:hover {
-  color: #CE1127;
+  color: #fff;
 }
 
 #contact .contact-address,
@@ -1452,7 +1439,7 @@ Services Section
 #contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  background: #fff;
+  background: #14213d;
 }
 
 #contact .php-email-form .error-message {
@@ -1514,7 +1501,7 @@ Services Section
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #CE1127;
+  background: #aebfdb;
   border: 0;
   padding: 10px 30px;
   color: #fff;
