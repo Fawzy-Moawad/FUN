@@ -1,10 +1,4 @@
-/**
-* Template Name: BizPage
-* Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -328,9 +322,7 @@
 })()
 
 
-/*language*/
-
-// Added the following code to handle language toggle
+/* Language Toggle */
 document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
 
@@ -339,22 +331,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutContentAr = document.getElementById('about-content-ar');
     const servicesContentEn = document.getElementById('services-content-en');
     const servicesContentAr = document.getElementById('services-content-ar');
-    
-    
 
     if (currentLanguage === 'en') {
       aboutContentEn.style.display = 'block';
       aboutContentAr.style.display = 'none';
       servicesContentEn.style.display = 'block';
       servicesContentAr.style.display = 'none';
-      
-      
     } else {
       aboutContentEn.style.display = 'none';
       aboutContentAr.style.display = 'block';
       servicesContentEn.style.display = 'none';
       servicesContentAr.style.display = 'block';
-      
     }
   }
 
