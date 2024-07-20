@@ -830,78 +830,100 @@ h4.title {
 our activities
 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-body {
-  background-color: #324968;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
+#about .gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 30px;
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.main {
-  margin: 0 auto;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: #091014;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  height: 100%;
-}
-
-
-.card_content {
-  padding: 1rem;
-  z-index: 1;
-  display: block;
-}
-
-.card_title {
-  font-size: 36px;
-  margin-top: 0;
-  margin-bottom: 24px;
-  text-shadow: black 1px 0 15px;
-  color: white;
-}
-
-.card_text p {
+#about .container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
   color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+#about .card {
+  max-width: 550px;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+#about .container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: #14213d;
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 40px;
+  img {
+    margin-bottom: 32px;
+  }
+}
+
+#about .bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+#about .bg-green-box::after,
+#about .bg-white-box::after,
+#about .bg-yellow-box::after,
+#about .bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+
+
+#about .card-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+}
+
+#about .card-description {
   font-weight: 200;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+  max-width: 470px;
 }
 
 
-/* Ensuring all cards have the same height */
-.row > .col-lg-6 {
-  display: flex;
-  flex-direction: column;
-}
 
-.card {
-  height: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -935,7 +957,7 @@ vision and focus
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
-  background-color: #121212;
+  background-color: #4c5385;
   flex: 1;
   position: relative;
   transition: transform 0.5s ease; /* Add this line */
@@ -972,7 +994,7 @@ vision and focus
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #f9b234;
+  background-color: #aebfdb;
   z-index: 1;
   position: absolute;
   top: -75px;
@@ -1367,6 +1389,7 @@ Services Section
 /* Contact Section
 --------------------------------*/
 #contact {
+  background-color: #aebfdb;
   padding: 60px 0;
 }
 
@@ -1500,7 +1523,7 @@ Services Section
 }
 
 #contact .php-email-form button[type=submit]:hover {
-  background: #8B0000;
+  background: #4c5385;
 }
 
 @keyframes animate-loading {
