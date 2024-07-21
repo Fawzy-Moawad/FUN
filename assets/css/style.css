@@ -1137,7 +1137,7 @@ Services Section
 }
 
 #services h3{
-  color: #14213d;
+  color: #fff;
 }
 
 #services p{
@@ -1159,30 +1159,16 @@ Services Section
   transition: 0.5s;
 }
 
-#services .services-title a {
+#services .services-title {
   color: #14213d;
-  margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-}
-
-#services .services-title a:hover {
-  color: #fff;
-  margin-left: 60px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-#services .box:hover .title a {
-  color: #aebfdb;
 }
 
 #services .description {
   color: #fff;
   font-size: 14px;
-  margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
 }
