@@ -1006,7 +1006,7 @@ our activities
 
 #about .card-title {
   font-weight: 600;
-  color: white;
+  color: #0785F3;
   letter-spacing: -0.02em;
   line-height: 40px;
   font-style: normal;
@@ -1475,6 +1475,10 @@ Services Section
 }
 
 #contact .section-header h3 {
+  color: #fff;
+}
+
+#contact .section-header p {
   color: #fff;
 }
 
