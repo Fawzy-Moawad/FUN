@@ -333,10 +333,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const servicesContentAr = document.getElementById('services-content-ar');
     const clientsContentEn = document.getElementById('clients-content-en');
     const clientsContentAr = document.getElementById('clients-content-ar');
-
-    const contactClientsContentEn = document.getElementById('contactClients-content-en');
-    const contactClientsContentAr = document.getElementById('contactClients-content-ar');
-
     const footerContentEn = document.getElementById('footer-content-en');
     const footerContentAr = document.getElementById('footer-content-ar');
 
@@ -347,10 +343,6 @@ document.addEventListener('DOMContentLoaded', function () {
       servicesContentAr.style.display = 'none';
       clientsContentEn.style.display = 'block';
       clientsContentAr.style.display = 'none';
-
-      contactClientsContentEn.style.display = 'block';
-      contactClientsContentAr.style.display = 'none';
-
       footerContentEn.style.display = 'block';
       footerContentAr.style.display = 'none';
     } else {
@@ -360,10 +352,6 @@ document.addEventListener('DOMContentLoaded', function () {
       servicesContentAr.style.display = 'block';
       clientsContentEn.style.display = 'none';
       clientsContentAr.style.display = 'block';
-
-      contactClientsContentEn.style.display = 'none';
-      contactClientsContentAr.style.display = 'block';
-
       footerContentEn.style.display = 'none';
       footerContentAr.style.display = 'block';
     }
