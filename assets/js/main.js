@@ -331,29 +331,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutContentAr = document.getElementById('about-content-ar');
     const servicesContentEn = document.getElementById('services-content-en');
     const servicesContentAr = document.getElementById('services-content-ar');
-    const clientsContentEn = document.getElementById('clients-content-en');
-    const clientsContentAr = document.getElementById('clients-content-ar');
     const footerContentEn = document.getElementById('footer-content-en');
     const footerContentAr = document.getElementById('footer-content-ar');
+    const comingSoonContentEn = document.getElementById('comingSoon-content-en');
+    const comingSoonContentAr = document.getElementById('comingSoon-content-ar');
 
     if (currentLanguage === 'en') {
       aboutContentEn.style.display = 'block';
       aboutContentAr.style.display = 'none';
       servicesContentEn.style.display = 'block';
       servicesContentAr.style.display = 'none';
-      clientsContentEn.style.display = 'block';
-      clientsContentAr.style.display = 'none';
       footerContentEn.style.display = 'block';
       footerContentAr.style.display = 'none';
+      comingSoonContentEn.style.display = 'block';
+      comingSoonContentAr.style.display = 'none';
     } else {
       aboutContentEn.style.display = 'none';
       aboutContentAr.style.display = 'block';
       servicesContentEn.style.display = 'none';
       servicesContentAr.style.display = 'block';
-      clientsContentEn.style.display = 'none';
-      clientsContentAr.style.display = 'block';
       footerContentEn.style.display = 'none';
       footerContentAr.style.display = 'block';
+      comingSoonContentEn.style.display = 'none';
+      comingSoonContentAr.style.display = 'block';
     }
   }
 

@@ -39,6 +39,17 @@ h6 {
   padding: 0;
 }
 
+
+
+#comingSoon {
+  background-color: #0785F3;
+}
+
+#comingSoon h3,
+#comingSoon h4 {
+ color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
