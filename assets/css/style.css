@@ -1376,6 +1376,21 @@ Services Section
   color: #fff;
 }
 
+.hover-svg {
+  transition: all 0.3s ease;
+}
+
+.hover-svg:hover path {
+  fill: #fff; /* Change this color to your desired hover color */
+  transition: fill 0.3s ease;
+}
+
+.hover-svg:hover text {
+  fill: #14213d; /* Change this color to your desired text hover color */
+  transition: fill 0.3s ease;
+}
+
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
