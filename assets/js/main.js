@@ -321,6 +321,9 @@
 
 })()
 
+/*
+LANGUAGE
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
