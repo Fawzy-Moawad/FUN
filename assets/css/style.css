@@ -56,6 +56,25 @@ h6 {
   color: #fff;
 }
 
+
+/* Ensure the wave container spans the full width */
+.wave-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-svg {
+  display: block;
+  width: 100%;
+  height: 200px; /* Adjust height to maintain aspect ratio */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -806,6 +825,22 @@ section {
   font-size: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h4.title {
   color: #14213d; /* Your desired color */
   font-size: 24px; /* Add other styles as needed */
@@ -1428,93 +1463,6 @@ Services Section
   }
 }
 
-#contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
-  background: #14213d;
-}
-
-#contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-#contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #CE1127;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-#contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #CE1127;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-#contact .php-email-form .form-group {
-  margin-bottom: 20px;
-}
-
-#contact .php-email-form input,
-#contact .php-email-form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-}
-
-#contact .php-email-form input::focus,
-#contact .php-email-form textarea::focus {
-  background-color: #CE1127;
-}
-
-#contact .php-email-form button[type=submit] {
-  background: #fff;
-  border: 0;
-  padding: 10px 30px;
-  color: #14213d;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-#contact .php-email-form button[type=submit]:hover {
-  background: #0785F3;
-  color: #fff;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Blog
@@ -2048,11 +1996,13 @@ Services Section
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
+  position: relative; /* Ensure the SVG can be positioned relative to the footer */
 }
 
 #footer .footer-top {
   background: #14213d;
   padding: 60px 0 30px 0;
+  position: relative; /* Ensure the footer content is positioned correctly */
 }
 
 #footer .footer-top .footer-info {
@@ -2077,7 +2027,6 @@ Services Section
   font-family: "Montserrat", sans-serif;
   color: #eee;
 }
-
 
 #footer .footer-top .social-links a {
   display: inline-block;

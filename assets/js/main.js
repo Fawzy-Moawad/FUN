@@ -333,8 +333,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const servicesContentAr = document.getElementById('services-content-ar');
     const footerContentEn = document.getElementById('footer-content-en');
     const footerContentAr = document.getElementById('footer-content-ar');
-    const comingSoonContentEn = document.getElementById('comingSoon-content-en');
-    const comingSoonContentAr = document.getElementById('comingSoon-content-ar');
+    const comingsoonContentEn = document.getElementById('comingsoon-content-en');
+    const comingsoonContentAr = document.getElementById('comingsoon-content-ar');
 
     if (currentLanguage === 'en') {
       aboutContentEn.style.display = 'block';
@@ -343,8 +343,8 @@ document.addEventListener('DOMContentLoaded', function () {
       servicesContentAr.style.display = 'none';
       footerContentEn.style.display = 'block';
       footerContentAr.style.display = 'none';
-      comingSoonContentEn.style.display = 'block';
-      comingSoonContentAr.style.display = 'none';
+      comingsoonContentEn.style.display = 'block';
+      comingsoonContentAr.style.display = 'none';
     } else {
       aboutContentEn.style.display = 'none';
       aboutContentAr.style.display = 'block';
@@ -352,8 +352,8 @@ document.addEventListener('DOMContentLoaded', function () {
       servicesContentAr.style.display = 'block';
       footerContentEn.style.display = 'none';
       footerContentAr.style.display = 'block';
-      comingSoonContentEn.style.display = 'none';
-      comingSoonContentAr.style.display = 'block';
+      comingsoonContentEn.style.display = 'none';
+      comingsoonContentAr.style.display = 'block';
     }
   }
 
@@ -369,7 +369,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateContent();
 });
-
 
 // our activities in about section
 
