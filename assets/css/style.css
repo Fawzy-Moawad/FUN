@@ -60,14 +60,14 @@ h6 {
 /* Ensure the wave container spans the full width */
 .wave-container {
   position: relative;
-  height: 200px;
+  height: 150px;
   width: 100%;
   overflow: hidden;
 }
 
 .section-svg {
   display: block;
-  width: 100%;
+  width: 150%;
   height: 200px; /* Adjust height to maintain aspect ratio */
   position: absolute;
   bottom: 0;

@@ -329,6 +329,10 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
 
   function updateContent() {
+      const aboutContentEn = document.getElementById('about-content-en');
+      const aboutContentAr = document.getElementById('about-content-ar');
+      const servicesContentEn = document.getElementById('services-content-en');
+      const servicesContentAr = document.getElementById('services-content-ar');
       const contactContentEn = document.getElementById('contact-content-en');
       const contactContentAr = document.getElementById('contact-content-ar');
       const footerContentEn = document.getElementById('footer-content-en');
@@ -338,6 +342,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Toggle visibility based on current language
       const elements = {
+          aboutContentEn,
+          aboutContentAr,
+          servicesContentEn,
+          servicesContentAr,
           contactContentEn,
           contactContentAr,
           footerContentEn,
