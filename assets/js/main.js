@@ -322,53 +322,73 @@
 })()
 
 
-/* Language Toggle */
 document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
 
   function updateContent() {
-    const aboutContentEn = document.getElementById('about-content-en');
-    const aboutContentAr = document.getElementById('about-content-ar');
-    const servicesContentEn = document.getElementById('services-content-en');
-    const servicesContentAr = document.getElementById('services-content-ar');
-    const footerContentEn = document.getElementById('footer-content-en');
-    const footerContentAr = document.getElementById('footer-content-ar');
-    const comingsoonContentEn = document.getElementById('comingsoon-content-en');
-    const comingsoonContentAr = document.getElementById('comingsoon-content-ar');
+      const contactContentEn = document.getElementById('contact-content-en');
+      const contactContentAr = document.getElementById('contact-content-ar');
+      const footerContentEn = document.getElementById('footer-content-en');
+      const footerContentAr = document.getElementById('footer-content-ar');
+      const comingsoonContentEn = document.getElementById('comingsoon-content-en');
+      const comingsoonContentAr = document.getElementById('comingsoon-content-ar');
 
-    if (currentLanguage === 'en') {
-      aboutContentEn.style.display = 'block';
-      aboutContentAr.style.display = 'none';
-      servicesContentEn.style.display = 'block';
-      servicesContentAr.style.display = 'none';
-      footerContentEn.style.display = 'block';
-      footerContentAr.style.display = 'none';
-      comingsoonContentEn.style.display = 'block';
-      comingsoonContentAr.style.display = 'none';
-    } else {
-      aboutContentEn.style.display = 'none';
-      aboutContentAr.style.display = 'block';
-      servicesContentEn.style.display = 'none';
-      servicesContentAr.style.display = 'block';
-      footerContentEn.style.display = 'none';
-      footerContentAr.style.display = 'block';
-      comingsoonContentEn.style.display = 'none';
-      comingsoonContentAr.style.display = 'block';
-    }
+      // Toggle visibility based on current language
+      const elements = {
+          contactContentEn,
+          contactContentAr,
+          footerContentEn,
+          footerContentAr,
+          comingsoonContentEn,
+          comingsoonContentAr
+      };
+
+      for (const [key, value] of Object.entries(elements)) {
+          if (value) {
+              if (key.includes('En')) {
+                  value.style.display = currentLanguage === 'en' ? 'block' : 'none';
+              } else if (key.includes('Ar')) {
+                  value.style.display = currentLanguage === 'ar' ? 'block' : 'none';
+              }
+          }
+      }
+
+      // Update the checkbox state
+      const languageToggle = document.getElementById('languageToggle');
+      if (languageToggle) {
+          languageToggle.checked = currentLanguage === 'ar';
+      }
   }
 
   function toggleLanguage() {
-    currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-    updateContent();
+      currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+      localStorage.setItem('lang', currentLanguage);
+      updateContent();
   }
 
+  // Get saved language from localStorage
+  const savedLanguage = localStorage.getItem('lang');
+  if (savedLanguage) {
+      currentLanguage = savedLanguage;
+  }
+
+  // Set the initial state of the toggle switch
   const languageToggle = document.getElementById('languageToggle');
   if (languageToggle) {
-    languageToggle.addEventListener('change', toggleLanguage);
+      languageToggle.checked = currentLanguage === 'ar';
+      languageToggle.addEventListener('change', toggleLanguage);
   }
 
   updateContent();
 });
+
+
+
+
+
+
+
+
 
 // our activities in about section
 

@@ -41,16 +41,16 @@ h6 {
 
 
 
-#comingSoon {
+#comingsoon {
   background-color: #0785F3;
 }
 
-#comingSoon h3,
-#comingSoon h4 {
+#comingsoon h3,
+#comingsoon h4 {
  color: #fff;
 }
 
-#comingSoon h4 strong {
+#comingsoon h4 strong {
   font-size: 50px;
  font-weight: 800;
   color: #fff;
@@ -1406,63 +1406,6 @@ Services Section
 #contact .section-header p {
   color: #fff;
 }
-
-#contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #14213d;
-}
-
-#contact .contact-info address,
-#contact .contact-info p {
-  margin-bottom: 0;
-  color: #fff;
-}
-
-#contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-#contact .contact-info a {
-  color: #fff;
-}
-
-#contact .contact-info a:hover {
-  color: #14213d;
-}
-
-#contact .contact-address,
-#contact .contact-phone,
-#contact .contact-email {
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-
-  #contact .contact-address,
-  #contact .contact-phone,
-  #contact .contact-email {
-    padding: 20px 0;
-  }
-}
-
-@media (min-width: 768px) {
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-}
-
 
 /*--------------------------------------------------------------
 # Blog
