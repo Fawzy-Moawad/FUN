@@ -47,13 +47,22 @@ h6 {
 
 #comingsoon h3,
 #comingsoon h4 {
+  font-size: 40px;
  color: #fff;
 }
 
+#comingsoon h3 {
+  font-size: 60px;
+}
+
+#comingsoon h4 {
+  font-size: 40px;
+}
+
 #comingsoon h4 strong {
-  font-size: 50px;
+  font-size: 65px;
  font-weight: 800;
-  color: #fff;
+  color: #14213d;
 }
 
 
