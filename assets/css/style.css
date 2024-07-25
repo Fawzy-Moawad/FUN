@@ -1405,6 +1405,15 @@ Services Section
   transition: fill 0.3s ease;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .svg-resize {
+    width: 200px; /* Adjust the width for mobile devices */
+    height: 200px; /* Adjust the height for mobile devices */
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Blog
