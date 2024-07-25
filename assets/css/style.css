@@ -905,6 +905,20 @@ h4.title {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  
 our activities
 */
@@ -914,7 +928,10 @@ our activities
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   padding: 30px;
-  @media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 991px) {
+  #about .gradient-cards {
     grid-template-columns: 1fr;
   }
 }
@@ -941,11 +958,9 @@ our activities
   border: 2px solid transparent;
   background: #14213d;
   background-clip: padding-box;
-  border-radius: 45px;
+  border-radius: 45px; /* Ensures the container-card is rounded */
   padding: 40px;
-  img {
-    margin-bottom: 32px;
-  }
+  overflow: hidden; /* Ensures inner elements do not overflow the card */
 }
 
 #about .bg-green-box,
@@ -953,6 +968,7 @@ our activities
 .bg-yellow-box,
 .bg-blue-box {
   position: relative;
+  border-radius: 45px; /* Ensures the background boxes are rounded */
 }
 
 #about .bg-green-box::after,
@@ -966,10 +982,8 @@ our activities
   right: -1px;
   content: "";
   z-index: -1;
-  border-radius: 45px;
+  border-radius: 45px; /* Ensures the pseudo-elements are rounded */
 }
-
-
 
 #about .card-title {
   font-weight: 600;
@@ -988,6 +1002,7 @@ our activities
   font-size: 14px;
   max-width: 470px;
 }
+
 
 /*
 vision and focus
@@ -1376,16 +1391,16 @@ Services Section
   color: #fff;
 }
 
-.hover-svg {
+#contact .hover-svg {
   transition: all 0.3s ease;
 }
 
-.hover-svg:hover path {
+#contact .hover-svg:hover path {
   fill: #fff; /* Change this color to your desired hover color */
   transition: fill 0.3s ease;
 }
 
-.hover-svg:hover text {
+#contact .hover-svg:hover text {
   fill: #14213d; /* Change this color to your desired text hover color */
   transition: fill 0.3s ease;
 }
