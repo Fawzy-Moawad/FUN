@@ -925,41 +925,32 @@ h4.title {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  
 our activities
 */
 
 #about .activities {
-  background-color: #fff;
+  background-color: #0785F3;
 }
 #about .activities i {
-  color: #14213d;
+  color: #fff;
   font-size: 2rem;
 }
 
 #about .activities h6 {
-  color: #14213d;
-  font-size: 22px;
-  font-weight: 500;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
 }
 
 #about .activities p {
-  color: #000;
+  color: #fff;
+}
+
+
+
+.vertical-line {
+  border: 10px solid #fff; /* Change the color and width as needed */
 }
 
 /*
