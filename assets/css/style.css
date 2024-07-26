@@ -859,8 +859,8 @@ section {
 
 #about .team-member {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 20px auto;
   border-radius: 50%;
   overflow: hidden; /* Ensures the overlay is contained within the circle */
@@ -927,10 +927,10 @@ h4.title {
   }
 }
 
-
 #about .activities {
   background-color: #0785F3;
 }
+
 #about .activities i {
   color: #fff;
   font-size: 2rem;
