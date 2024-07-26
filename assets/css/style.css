@@ -771,11 +771,20 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.png") center top no-repeat fixed;
+  background: url("../img/svg/background.png") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  #about {
+    background: url("../img/svg/mobile-background..png") center top no-repeat fixed;
+    background-size: cover;
+  }
+}
+
 
 #about::before {
   content: "";
@@ -784,13 +793,25 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.88);
   z-index: 9;
 }
 
 #about .container {
   position: relative;
   z-index: 10;
+}
+
+#about .section-header,
+#about h3 {
+  color: #fff;
+}
+
+#about p {
+  color: #fff;
+}
+
+#about #team .section-header h3{
+  color: #fff;
 }
 
 #about .about-col {
@@ -923,86 +944,23 @@ h4.title {
 our activities
 */
 
-#about .gradient-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  padding: 30px;
+#about .activities {
+  background-color: #fff;
+}
+#about .activities i {
+  color: #14213d;
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 991px) {
-  #about .gradient-cards {
-    grid-template-columns: 1fr;
-  }
+#about .activities h6 {
+  color: #14213d;
+  font-size: 22px;
+  font-weight: 500;
 }
 
-#about .container-title {
-  text-align: center;
-  padding: 0 !important;
-  margin-bottom: 40px;
-  font-size: 40px;
-  color: #fff;
-  font-weight: 600;
-  line-height: 60px;
+#about .activities p {
+  color: #000;
 }
-
-#about .card {
-  max-width: 550px;
-  border: 0;
-  width: 100%;
-  margin-inline: auto;
-}
-
-#about .container-card {
-  position: relative;
-  border: 2px solid transparent;
-  background: #14213d;
-  background-clip: padding-box;
-  border-radius: 45px; /* Ensures the container-card is rounded */
-  padding: 40px;
-  overflow: hidden; /* Ensures inner elements do not overflow the card */
-}
-
-#about .bg-green-box,
-.bg-white-box,
-.bg-yellow-box,
-.bg-blue-box {
-  position: relative;
-  border-radius: 45px; /* Ensures the background boxes are rounded */
-}
-
-#about .bg-green-box::after,
-#about .bg-white-box::after,
-#about .bg-yellow-box::after,
-#about .bg-blue-box::after {
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  content: "";
-  z-index: -1;
-  border-radius: 45px; /* Ensures the pseudo-elements are rounded */
-}
-
-#about .card-title {
-  font-weight: 600;
-  color: #0785F3;
-  letter-spacing: -0.02em;
-  line-height: 40px;
-  font-style: normal;
-  font-size: 28px;
-  padding-bottom: 8px;
-}
-
-#about .card-description {
-  font-weight: 200;
-  line-height: 32px;
-  color: #fff;
-  font-size: 14px;
-  max-width: 470px;
-}
-
 
 /*
 vision and focus
@@ -1034,16 +992,10 @@ vision and focus
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
-  background-color: #0785F3;
+  background-color: #fff;
   flex: 1;
   position: relative;
   transition: transform 0.5s ease; /* Add this line */
-}
-
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
-  text-decoration: none;
-  color: #FFF;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
@@ -1055,14 +1007,14 @@ vision and focus
   margin: 0 0 25px;
   font-weight: bold;
   font-size: 30px;
-  color: #FFF;
+  color: #14213d;
   z-index: 2;
   position: relative;
 }
 
 .ag-courses-item_date-box {
   font-size: 18px;
-  color: #FFF;
+  color: #000;
   z-index: 2;
   position: relative;
   flex: 1;
@@ -1071,7 +1023,7 @@ vision and focus
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #14213d;
+  background-color: #fff;
   z-index: 1;
   position: absolute;
   top: -75px;
@@ -1408,8 +1360,8 @@ Services Section
 /* Media query for mobile devices */
 @media (max-width: 767px) {
   .svg-resize {
-    width: 250px; /* Adjust the width for mobile devices */
-    height: 250px; /* Adjust the height for mobile devices */
+    width: 200px; /* Adjust the width for mobile devices */
+    height: 200px; /* Adjust the height for mobile devices */
   }
 }
 
