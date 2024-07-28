@@ -90,17 +90,6 @@
     onscroll(document, headerScrolled)
   }
 
-  /**
-   * Hero carousel indicators
-   */
-  let heroCarouselIndicators = select("#hero-carousel-indicators")
-  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
-
-  heroCarouselItems.forEach((item, index) => {
-    (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-  });
 
   /**
    * Back to top button
@@ -174,23 +163,6 @@
     window.addEventListener('load', () => {
       preloader.remove()
     });
-  }
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
   }
 
   /**
@@ -284,23 +256,6 @@
     }
   });
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
 
   /**
    * Animation on scroll
@@ -329,6 +284,8 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
 
   function updateContent() {
+      const heroContentEn = document.getElementById('hero-content-en');
+      const heroContentAr = document.getElementById('hero-content-ar');
       const aboutContentEn = document.getElementById('about-content-en');
       const aboutContentAr = document.getElementById('about-content-ar');
       const servicesContentEn = document.getElementById('services-content-en');
@@ -342,6 +299,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Toggle visibility based on current language
       const elements = {
+          heroContentEn,
+          heroContentAr,
           aboutContentEn,
           aboutContentAr,
           servicesContentEn,
