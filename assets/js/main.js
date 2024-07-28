@@ -276,14 +276,12 @@
 
 })()
 
-/*
-LANGUAGE
-*/
-
 document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
 
   function updateContent() {
+      const navbarEn = document.getElementById('navbar-en');
+      const navbarAr = document.getElementById('navbar-ar');
       const heroContentEn = document.getElementById('hero-content-en');
       const heroContentAr = document.getElementById('hero-content-ar');
       const aboutContentEn = document.getElementById('about-content-en');
@@ -299,6 +297,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Toggle visibility based on current language
       const elements = {
+          navbarEn,
+          navbarAr,
           heroContentEn,
           heroContentAr,
           aboutContentEn,
