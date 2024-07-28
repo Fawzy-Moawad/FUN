@@ -560,21 +560,6 @@ Toggle Section
   margin-top: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Ensure the fixed background effect on mobile */
 @hero (max-width: 768px) {
   #hero {
@@ -606,6 +591,7 @@ Toggle Section
 
 #hero .activities a h6 {
   color: #fff;
+  font-size: 20px;
   font-weight: 700;
 }
 

@@ -276,6 +276,10 @@
 
 })()
 
+
+
+//Language
+
 document.addEventListener('DOMContentLoaded', function () {
   let currentLanguage = 'en';
 
@@ -350,6 +354,21 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   updateContent();
+
+  // Handle mobile nav toggle
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  if (mobileNavToggle) {
+      mobileNavToggle.addEventListener('click', function () {
+          const navbarEn = document.getElementById('navbar-en');
+          const navbarAr = document.getElementById('navbar-ar');
+          if (currentLanguage === 'en' && navbarEn) {
+              navbarEn.classList.toggle('navbar-mobile');
+          } else if (currentLanguage === 'ar' && navbarAr) {
+              navbarAr.classList.toggle('navbar-mobile');
+          }
+          this.classList.toggle('bi-x');
+      });
+  }
 });
 
 
