@@ -172,9 +172,9 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation */
+
+/* Common Navbar Styles */
 .navbar {
   padding: 0;
 }
@@ -197,8 +197,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
+  font-family: "Montserrat", sans-serif; /* Same font-family */
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
@@ -216,7 +216,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #0785F3;
 }
 
@@ -251,11 +251,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #0785F3;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -267,7 +267,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -279,14 +279,12 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: #0785F3;
   font-size: 40px;
@@ -311,7 +309,6 @@ h6 {
   .navbar ul {
     display: none;
   }
-
 }
 
 .navbar-mobile {
@@ -354,7 +351,7 @@ h6 {
 
 .navbar-mobile a {
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -366,7 +363,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #0785F3;
 }
 
@@ -401,13 +398,27 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #aebfdb;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+/* Additional styling for Arabic navbar to handle text direction */
+#navbar-ar {
+  direction: rtl;
+  text-align: right;
+}
+
+#navbar-ar a,
+#navbar-ar a:focus {
+  font-family: "Montserrat", sans-serif; /* Ensure same font-family */
+  font-size: 20px; /* Ensure same font-size */
+  font-weight: 700; /* Ensure same font-weight */
+}
+
 
 /*------------------------------------------------
 Toggle Section
