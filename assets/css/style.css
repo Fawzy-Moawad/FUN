@@ -937,6 +937,46 @@ Services Section
   border: 10px solid #fff; /* Change the color and width as needed */
 }
 
+/*-------------------------------- 
+#Upcoming Events Section
+--------------------------------*/
+#upcomingEvents {
+  background: url("../img/svg/background.png") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#upcomingEvents h3{
+  color: #fff;
+}
+
+#upcomingEvents p{
+  color: #fff;
+}
+
+#upcomingEvents .upcomingEvents-img {
+  height: 500px;
+}
+
+#upcomingEvents a .activities {
+  background-color: #0785F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#upcomingEvents a .activities h6 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+#upcomingEvents a .vertical-line {
+  border: 10px solid #fff; /* Change the color and width as needed */
+}
+
+
 /* Portfolio Section
 --------------------------------*/
 #portfolio {

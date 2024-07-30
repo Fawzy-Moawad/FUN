@@ -292,6 +292,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const aboutContentAr = document.getElementById('about-content-ar');
       const servicesContentEn = document.getElementById('services-content-en');
       const servicesContentAr = document.getElementById('services-content-ar');
+      const upcomingEventsContentEn = document.getElementById('upcomingEvents-content-en');
+      const upcomingEventsContentAr = document.getElementById('upcomingEvents-content-ar');
       const contactContentEn = document.getElementById('contact-content-en');
       const contactContentAr = document.getElementById('contact-content-ar');
       const footerContentEn = document.getElementById('footer-content-en');
@@ -309,6 +311,8 @@ document.addEventListener('DOMContentLoaded', function () {
           aboutContentAr,
           servicesContentEn,
           servicesContentAr,
+          upcomingEventsContentEn,
+          upcomingEventsContentAr,
           contactContentEn,
           contactContentAr,
           footerContentEn,
