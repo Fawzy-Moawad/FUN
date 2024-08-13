@@ -292,6 +292,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const aboutContentAr = document.getElementById('about-content-ar');
       const servicesContentEn = document.getElementById('services-content-en');
       const servicesContentAr = document.getElementById('services-content-ar');
+      const servicesSocialContentEn = document.getElementById('services-social-content-en');
+      const servicesSocialContentAr = document.getElementById('services-social-content-ar');
       const upcomingEventsContentEn = document.getElementById('upcomingEvents-content-en');
       const upcomingEventsContentAr = document.getElementById('upcomingEvents-content-ar');
       const contactContentEn = document.getElementById('contact-content-en');
