@@ -313,6 +313,8 @@ document.addEventListener('DOMContentLoaded', function () {
           aboutContentAr,
           servicesContentEn,
           servicesContentAr,
+          servicesSocialContentEn,
+          servicesSocialContentAr,
           upcomingEventsContentEn,
           upcomingEventsContentAr,
           contactContentEn,
