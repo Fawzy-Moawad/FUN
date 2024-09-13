@@ -986,32 +986,6 @@ Services Section
   position: relative;
 }
 
-#portfolio #portfolio-flters {
-  padding: 0;
-  margin: 5px 0 35px 0;
-  list-style: none;
-  text-align: center;
-}
-
-#portfolio #portfolio-flters li {
-  cursor: pointer;
-  margin: 15px 15px 15px 0;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #666666;
-  border-radius: 4px;
-  text-transform: uppercase;
-  background: #fff;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-#portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
 #portfolio .portfolio-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
@@ -1034,6 +1008,13 @@ Services Section
   position: relative;
   border-radius: 4px 4px 0 0;
   margin: 0;
+}
+
+#portfolio .portfolio-item figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 #portfolio .portfolio-item figure:hover img {
@@ -1131,6 +1112,15 @@ Services Section
   height: 100%;
 }
 
+@media (width < 700px) {
+  #portfolio .portfolio-item figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
 /*---------------------------------
 Gallery Pictures
 ---------------------------------*/
@@ -1161,6 +1151,12 @@ Gallery Pictures
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 175px;
   }
+  .gallery-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
 }
 
 /*Gallery-vid*/
@@ -1188,6 +1184,12 @@ Gallery Pictures
   .gallery-vid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 175px;
+  }
+  .gallery-vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
   }
 }
 /*--------------------------------
