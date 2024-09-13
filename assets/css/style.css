@@ -1134,7 +1134,12 @@ Services Section
 /*---------------------------------
 Gallery Pictures
 ---------------------------------*/
-
+#gallery-pic {
+  background: url("../img/svg/background.png") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
 .gallery-pic {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1148,7 +1153,6 @@ Gallery Pictures
   object-fit: cover;
   cursor: pointer;
 }
-
 
 @media (width < 700px) {
   .gallery-pic {
