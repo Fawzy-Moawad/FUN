@@ -296,6 +296,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const servicesSocialContentAr = document.getElementById('services-social-content-ar');
       const upcomingEventsContentEn = document.getElementById('upcomingEvents-content-en');
       const upcomingEventsContentAr = document.getElementById('upcomingEvents-content-ar');
+      const galleryContentEn = document.getElementById('gallery-content-en');
+      const galleryContentAr = document.getElementById('gallery-content-ar');
       const contactContentEn = document.getElementById('contact-content-en');
       const contactContentAr = document.getElementById('contact-content-ar');
       const footerContentEn = document.getElementById('footer-content-en');
@@ -313,6 +315,8 @@ document.addEventListener('DOMContentLoaded', function () {
           aboutContentAr,
           servicesContentEn,
           servicesContentAr,
+          galleryContentEn,
+          galleryContentAr,
           servicesSocialContentEn,
           servicesSocialContentAr,
           upcomingEventsContentEn,
