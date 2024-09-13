@@ -220,6 +220,23 @@
     }
   });
 
+  /*Gallery Pictures Lightbox*/
+  const lightbox = GLightbox({
+    selector: 'a[data-gallery="gallery-item-pic"]',
+  });
+  
+  // Optional: Handle swapping hero image
+  const galleryImages = document.querySelectorAll('.gallery-pic');
+  
+  galleryImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      const newSrc = img.getAttribute('src');
+      heroImage.setAttribute('src', newSrc);
+    });
+  });
+  
+  
+
   /**
    * Clients Slider
    */
