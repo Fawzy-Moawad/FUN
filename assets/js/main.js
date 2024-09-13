@@ -231,7 +231,6 @@
   galleryImages.forEach((img) => {
     img.addEventListener('click', () => {
       const newSrc = img.getAttribute('src');
-      heroImage.setAttribute('src', newSrc);
     });
   });
   

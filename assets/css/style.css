@@ -1134,6 +1134,8 @@ Services Section
 /*---------------------------------
 Gallery Pictures
 ---------------------------------*/
+
+/*Gallery-pic*/
 #gallery-pic {
   background: url("../img/svg/background.png") center top no-repeat fixed;
   background-size: cover;
@@ -1161,6 +1163,33 @@ Gallery Pictures
   }
 }
 
+/*Gallery-vid*/
+#gallery-vid {
+  background: url("../img/svg/background.png") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+.gallery-vid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 0.25rem;
+}
+
+.gallery-vid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media (width < 700px) {
+  .gallery-vid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 175px;
+  }
+}
 /*--------------------------------
 /* Contact Section
 --------------------------------*/
